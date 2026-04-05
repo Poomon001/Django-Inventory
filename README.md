@@ -49,3 +49,6 @@ docker compose up --build
 |------|------------|
 | http://localhost:8000/admin | Admin page (ID: admin, PW: admin123) |
 | http://localhost:8000/inventory/products/ | Inventory page |
+
+
+# Sample
