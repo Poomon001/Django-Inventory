@@ -5,8 +5,10 @@ A Django inventory application that provides a functional product catalog with 1
 
 # Design and Decision
 ## Workflow
+![Workflow](https://github.com/Poomon001/Django-Inventory/blob/main/static/assets/readme/Workflow.png)
 
 ## Database Relations
+![DB Relations](https://raw.githubusercontent.com/Poomon001/Django-Inventory/main/static/assets/readme/DB%20Relations.png)
 
 ## Table Details
 ### Category
