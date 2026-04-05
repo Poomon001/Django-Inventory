@@ -52,3 +52,4 @@ docker compose up --build
 
 
 # Sample
+![Sample](https://github.com/Poomon001/Django-Inventory/blob/main/static/assets/readme/Sample.png)
