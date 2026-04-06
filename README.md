@@ -12,7 +12,7 @@ This project follows Django's Model-View-Template pattern:
 * Each product must belong to exactly one category.
 * A product may have zero or multiple tags.
 * A product matches if it has any of the selected tags.
-* Categories and tags cannot be deleted if they are referenced by products
+* Categories cannot be deleted if they are referenced by products
 * Category and tag names cannot be duplicated, but product names are not required to be unique.
 * Products are not required to have a description.
 * URL paths are not strict and can be designed freely.
