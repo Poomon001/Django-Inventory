@@ -1,9 +1,23 @@
 # Django-Inventory
 A Django inventory application that provides a functional product catalog with 10 preloaded categories, 15 tags, and 23 sample products that can be managed via the admin interface. Users can search products by description and filter by category or tags via a HTML interface.
 
-## Tools
-
 # Design and Decision
+This project follows Django's Model-View-Template pattern:
+* Models define the data schema, including Product, Category, and Tag.
+* Views handle busniness logic and request processing.
+* Template render HTML for the user interface and dynamic data display.
+
+## Assumptions
+* The dataset is small, so no advanced database infrastructure is considered.
+* Each product must belong to exactly one category.
+* A product may have zero or multiple tags.
+* A product matches if it has any of the selected tags.
+* Categories and tags cannot be deleted if they are referenced by products
+* Category and tag names cannot be duplicated, but product names are not required to be unique.
+* Products are not required to have a description.
+* URL paths are not strict and can be designed freely.
+* Basic unit and integration tests are provided in test.py, but they are not strictly required.
+
 ## Workflow
 ![Workflow](https://github.com/Poomon001/Django-Inventory/blob/main/static/assets/readme/Workflow.png)
 
@@ -49,6 +63,7 @@ docker compose up --build
 |------|------------|
 | http://localhost:8000/admin | Admin page (ID: admin, PW: admin123) |
 | http://localhost:8000/inventory/products/ | Inventory page |
+** Note: Credentials are for demo purposes only
 
 
 # Sample

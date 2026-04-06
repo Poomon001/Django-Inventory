@@ -54,10 +54,10 @@
                           type="checkbox"
                           name="tag"
                           value="{{ tag.name }}"
-                          id="tag_{{ tag.name }}"
+                          id="tag_{{ tag.id }}"
                           {% if tag.name in tag_filters %}checked{% endif %}
                         />
-                        <label class="form-check-label" for="tag_{{ forloop.counter }}">
+                        <label class="form-check-label" for="tag_{{ tag.id }}">
                           {{ tag.name }}
                         </label>
                       </div>

@@ -66,7 +66,7 @@ class Product(models.Model):
     )
 
     class Meta:
-        ordering = ["-created_at"]         # Default ordering by newest first
+        ordering = ["-created_at"]          # Default ordering by newest first
 
     def __str__(self):
         return self.name
